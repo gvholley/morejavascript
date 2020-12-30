@@ -20,14 +20,28 @@ const newsfeed = [
 
 ];
 
+function isUserValid(username, password) {
+for (var i=0; i < database.length; i++) {
+  if(database[i].username === username &&
+    database[i].password === password) {
+    return true;
+  }
+}
+return false;
+}
+
+function signIn (username, password) {
+for (var i=0; i < database.length; i++) {
+  if(database[i].username === username &&
+    database[i].password === password) {
+    console.log(newsfeed);
+  } else {
+    alert("Sorry, wrong username and password");
+  }
+}
+
+
 const userNamePrompt = prompt("What's your username?");
 const passwordPrompt = prompt("What's your password?");
 
-function signIn (username, password) {
-  if (user === database[0].username &&
-    password === database[1].password) {
-    console.log(newsFeed);
-  } else {
-    alert("Sorry, wrong username or password");
-  }
-}
+signIn(userNamePrompt, passwordPrompt);
