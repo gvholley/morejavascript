@@ -7,6 +7,8 @@ function experiencePoints() {
     }
 }
 
+const experiencePoints = winBattle() ? 10 : 1;
+
 //Using this function, answer the questions below:
 function moveCommand(direction) {
     var whatHappens;
@@ -32,11 +34,11 @@ function moveCommand(direction) {
 }
 
 //#2 return value when moveCommand("forward");
-
+undefined
 //#3 return value when moveCommand("back");
-
+"you arrived home"
 //#4 return value when moveCommand("right");
-
+"you found a river"
 //#5 return value when moveCommand("left");
-
+undefined
 //BONUS: practice makes perfect. Go and write your own switch function. It takes time to get used to the syntax!

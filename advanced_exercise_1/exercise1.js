@@ -6,7 +6,7 @@ function q1() {
     if(a > 1) {
         a = 3;
     }
-    alert(a);
+    alert(a); //3
 }
 //
 //#2
@@ -16,7 +16,7 @@ function q2() {
 }
 
 function q22() {
-    alert(a);
+    alert(a); //5
 }
 
 
@@ -27,14 +27,14 @@ function q3() {
 
 
 function q32() {
-    alert(a);
+    alert(a); //hello after running q3
 }
 
 //#4
 var a = 1;
 function q4() {
     var a = "test";
-    alert(a);
+    alert(a); //test
 }
 
 //#5
@@ -43,4 +43,4 @@ if (true) {
     var a = 5;
     alert(a);
 }
-alert(a);
+alert(a); //5
